@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_dialog_bg"
+    android:padding="26dp">
+
+    <!-- Title -->
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tvDialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Task"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Task Title Input -->
+    <EditText
+        android:id="@+id/etTaskTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title *"
+        android:padding="12dp"
+        android:background="@drawable/input_background"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_marginBottom="15dp" />
+
+    <EditText
+        android:id="@+id/etTaskDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description *"
+        android:padding="12dp"
+        android:background="@drawable/input_background"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_marginBottom="15dp" />
+
+    <EditText
+        android:id="@+id/etTaskDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Date *"
+        android:focusable="false"
+        android:inputType="none"
+        android:padding="12dp"
+        android:background="@drawable/input_background"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_marginBottom="15dp" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_marginEnd="6dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:background="@drawable/button_cancel_background"
+            android:textColor="#767676"
+            android:padding="8dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_marginStart="6dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD TASK"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>

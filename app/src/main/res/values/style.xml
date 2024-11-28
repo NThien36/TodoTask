@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BlackDatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <!-- Main background color for DatePicker dialog -->
+        <item name="android:background">#000000</item>
+
+        <!-- Text color for the calendar days, headers, and selected date -->
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorSecondary">#B0B0B0</item>
+
+        <!-- Color for the DatePicker header and selection -->
+        <item name="colorAccent">#FFFFFF</item>
+        <item name="android:headerBackground">#000000</item>
+        <item name="android:datePickerMode">spinner</item>
+    </style>
+</resources>
